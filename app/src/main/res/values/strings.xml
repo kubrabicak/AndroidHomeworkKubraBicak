@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Phone Contact Recovery</string>
+    <string name="Avea">Avea</string>
+    <string name="Turkcell">Turkcell</string>
+    <string name="Vodafone">Vodafone</string>
+    <string name="BackUP">BackUP</string>
+    <string name="Recovery">Recovery</string>
+    <string name="radiogroup">radiogroup</string>
+
+</resources>
+
+    <!--use string xml to make the program better. if you want to change the language of the app you can just write the name of the language-->

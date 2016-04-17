@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5b74a8"
+        android:id="@+id/frag">
+
+        <RadioGroup android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickedOnAvea"
+                android:text="Avea"
+                android:id="@+id/Avea"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickedOnTurkcell"
+                android:text="Turkcell"
+                android:id="@+id/Turkcell"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickedOnVodafone"
+                android:text="Vodafone"
+                android:id="@+id/Vodafone"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickedOnAll"
+                android:text="All"
+                android:checked="true"
+                android:id="@+id/All"
+                />
+        </RadioGroup>
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_below="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100px"
+        android:id="@+id/contacts_list"></ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonLayout"
+        android:baselineAligned="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/Backup"
+            android:text="Backup"
+            android:onClick="backUpClicked"
+            />
+
+        <Button
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/Recovery"
+            android:text="Recovery"
+            android:onClick="recoveryClicked"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

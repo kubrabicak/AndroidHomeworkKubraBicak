@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.md212tu.week4.MainActivity"
+
+    >
+
+    <RadioGroup android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickedOnAvea"
+            android:text="Avea"
+            android:id="@+id/Avea"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickedOnTurkcell"
+            android:text="Turkcell"
+            android:id="@+id/Turkcell"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ContactList"
+            android:text="Vodafone"
+            android:id="@+id/Vodafone"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ContactList"
+            android:text="All"
+            android:id="@+id/All"
+            />
+    </RadioGroup>
+
+    <ListView
+        android:layout_below="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contacts_list"></ListView>
+
+</LinearLayout>
+<!--gravity=the content will be centered-->
